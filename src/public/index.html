@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+
+    <title>Form Nodemailer</title>
+    
+</head>
+<body>
+    <div class="container p-4">
+        <h1>node mailer</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/send-email" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Name" autofocus value="asbel">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email" value="asbel.elmec@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone" value="5992342">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" rows="2" class="form-control" placeholder="message" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maxime, architecto enim nostrum reiciendis quae quisquam repellendus.
+                                </textarea>
+                            </div>
+
+                            <button class="btn btn-primary btn-block">
+                                send
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
